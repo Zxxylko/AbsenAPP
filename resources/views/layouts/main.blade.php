@@ -15,54 +15,6 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="stylesheet" href="{{ asset('css/darkmode.css') }}">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Global Styles & Animations -->
-    <style>
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-        .animate-fade-in { animation: fadeIn 0.4s ease-out forwards; }
-        
-        @keyframes slideUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-        .animate-slide-up { animation: slideUp 0.4s ease-out forwards; }
-
-        @keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
-        .animate-slide-down { animation: slideDown 0.3s ease-out forwards; }
-
-        /* Smooth Mobile Menu */
-        #mobile-menu {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            transform-origin: top;
-        }
-        #mobile-menu.hidden {
-            display: none;
-            opacity: 0;
-            transform: scaleY(0);
-        }
-
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { 
-            background: #cbd5e1; 
-            border-radius: 10px; 
-            border: 2px solid transparent;
-            background-clip: content-box;
-        }
-        .dark ::-webkit-scrollbar-thumb { background: #475569; }
-        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
-
-        .glass-header {
-            @apply bg-ut-blue/95 backdrop-blur-md border-b border-white/10 shadow-xl;
-        }
-
-        /* Comfort: Click Feedback */
-        button:active, a:active { transform: scale(0.97); transition: transform 0.1s; }
-        
-        /* Back to Top */
-        #backToTop {
-            @apply fixed bottom-8 right-8 p-4 bg-ut-yellow text-ut-blue rounded-2xl shadow-2xl opacity-0 invisible transition-all duration-300 z-40 transform hover:-translate-y-1 hover:scale-110 active:scale-90;
-        }
-        #backToTop.visible { @apply opacity-100 visible; }
-    </style>
 </head>
 
 <body class="min-h-screen flex flex-col font-sans bg-ut-gray-50 dark:bg-ut-gray-900 text-ut-gray-900 dark:text-ut-gray-100 transition-colors duration-500 overflow-x-hidden">

@@ -10,16 +10,4 @@ export default defineConfig({
         }),
         tailwindcss(),
     ],
-    build: {
-        outDir: 'public/build',
-        assetsDir: '',
-        emptyOutDir: true,
-        manifest: true,
-        rollupOptions: {
-            input: {
-                app: 'resources/js/app.js',
-                styles: 'resources/css/app.css'
-            }
-        }
-    }
 });
