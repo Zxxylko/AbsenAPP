@@ -1,0 +1,17 @@
+{
+  "resources/css/app.css": {
+    "file": "styles-BI96hke5.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "name": "styles",
+    "names": [
+      "styles.css"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "app-CAiCLEjY.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
